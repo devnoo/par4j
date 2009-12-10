@@ -7,13 +7,11 @@ package info.denoo.par4j.model;
  *
  */
 public class PacketHeader {
-	
 	private long packetLength;
 	private PacketType packetType;
 	private Md5Checksum md5;
 	private Md5Checksum recoverySetId;
 	
-
 	public long getPacketLength() {
 		return packetLength;
 	}
@@ -45,4 +43,12 @@ public class PacketHeader {
 	public void setRecoverySetId(Md5Checksum recoverySetId) {
 		this.recoverySetId = recoverySetId;
 	}
+
+	@Override
+	public String toString() {
+		return "PacketHeader [md5=" + md5 + ", packetLength=" + packetLength + ", packetType=" + packetType
+				+ ", recoverySetId=" + recoverySetId + "]";
+	}
+	
+	
 }

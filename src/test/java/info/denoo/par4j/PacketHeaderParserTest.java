@@ -14,7 +14,11 @@ import java.nio.channels.FileChannel;
 import org.junit.Before;
 import org.junit.Test;
 
-
+/**
+ * Tests for the {@link PacketHeaderParser} class.
+ * @author Job de Noo
+ *
+ */
 public class PacketHeaderParserTest {
 	
 	private DataBuffer buffer;
